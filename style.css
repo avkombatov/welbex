@@ -335,6 +335,103 @@ ul li {
   transition: 0.3s;
 }
 
+.footer {
+  padding-top: 124px;
+  padding-bottom: 33px;
+}
+
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__company-a, .footer__menu-a, .footer__address, .footer__phone {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 27px;
+  color: #E4E5EA;
+}
+
+.footer__phone {
+  margin-bottom: 24px;
+}
+
+.footer__address {
+  margin-top: 22px;
+}
+
+.footer__menu-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__menu-right {
+  margin-left: 50px;
+}
+
+.footer__h5 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+  margin-bottom: 20px;
+}
+
+.footer__contacts {
+  text-align: right;
+}
+
+.footer__viber, .footer__whatsapp {
+  margin-left: 13px;
+}
+
+.footer__company-a:hover, .footer__menu-a:hover {
+  color: #FE6368;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__bottom {
+  padding-top: 33px;
+}
+
+.footer__rights {
+  text-align: right;
+}
+
+.footer__right {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  color: #E4E5EA;
+}
+
+.footer__politics {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #E4E5EA;
+}
+
 @media screen and (max-width: 1160px) {
   .center {
     padding-left: calc(50% - 500px);
