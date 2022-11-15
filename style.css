@@ -18,8 +18,11 @@ ul li {
   padding-right: calc(50% - 570px);
 }
 
-.header {
+.container {
   background: #1E1E1E;
+}
+
+.header {
   padding-top: 62px;
   height: 200px;
   display: -webkit-box;
@@ -269,5 +272,162 @@ ul li {
   .header__logo-descr {
     margin-top: 5px;
   }
+}
+
+.main {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 80px;
+  position: relative;
+}
+
+.main__gradient {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -102px;
+  background: #961A1A;
+  opacity: 0.5;
+  -webkit-filter: blur(196px);
+          filter: blur(196px);
+}
+
+.main__circle-red {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  left: 851px;
+  top: 390px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+  -webkit-box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+          box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  -webkit-filter: blur(2.5px);
+          filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.main__h2 {
+  width: 360px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  color: #E4E5EA;
+}
+
+.main__h2-descr {
+  width: 275px;
+  margin-top: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #E4E5EA;
+}
+
+.main__welbex {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.main .welbex {
+  text-transform: uppercase;
+}
+
+.main__consult {
+  width: 355px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  color: #E4E5EA;
+}
+
+.main__consult-h4 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #E4E5EA;
+}
+
+.main__consult-blocks {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+
+.main__consult-block {
+  max-width: 164px;
+}
+
+.main__consult-descr {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  color: #E4E5EA;
+  margin-top: 7px;
+}
+
+.main__free-consult {
+  background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.main__button {
+  width: 262px;
+  height: 61px;
+  background: #4077F3;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #E4E5EA;
+  border: none;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.main__button:hover {
+  background: #315ABB;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

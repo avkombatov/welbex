@@ -1,18 +1,146 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.main {
+    height: 500px;
+    // background: #1E1E1E;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+    position: relative;
 
-a {
-    text-decoration: none;
-}
+    &__gradient{
+        position: absolute;
+        width: 311px;
+height: 311px;
+left: -102px;
+        background: #961A1A;
+opacity: 0.5;
+filter: blur(196px);
+    }
 
-ul li {
-    list-style-type: none;
-}
+    &__circle-red{
+        position: absolute;
+        width: 28px;
+height: 28px;
+border-radius: 50%;
+left: 851px;
+top: 390px;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+filter: blur(2.5px);
+backdrop-filter: blur(2px);
+    }
 
-.center {
-    padding-left: calc(50% - 570px);
-    padding-right: calc(50% - 570px);
+    &__h2 {
+        width: 360px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 58px;
+        color: #E4E5EA;
+
+        &-descr {
+            width: 275px;
+            margin-top: 30px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #E4E5EA;
+        }
+    }
+
+    &__welbex {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+    }
+
+    .welbex {
+        text-transform: uppercase;
+    }
+
+    &__consult {
+        width: 355px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: right;
+        color: #E4E5EA;
+
+        &-h4 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: right;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: #E4E5EA;
+        }
+
+        &-blocks {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 30px;
+            grid-column-gap: 30px;
+        }
+
+        &-block {
+            max-width: 164px;
+        }
+
+        &-descr {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #E4E5EA;
+            margin-top: 7px;
+
+        }
+    }
+
+    &__free-consult {
+        background: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%), #E4E5EA;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        width: 262px;
+        height: 61px;
+        background: #4077F3;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #E4E5EA;
+        border: none;
+        cursor: pointer;
+        margin-top: 60px;
+        margin-left: 100px;
+        &:hover{
+            background:#315ABB;
+            transition: 0.3s;
+        }
+    }
 }
