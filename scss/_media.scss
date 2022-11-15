@@ -101,6 +101,26 @@
     }
 }
 
+@media screen and (max-width:680px){
+    .center{
+        padding-left: calc(50% - 280px);
+        padding-right: calc(50% - 280px);
+    }
+    .footer{
+        padding-top: 40px;
+        &__top{
+            flex-direction: column;
+
+        }
+        &__contacts{
+            text-align: left;
+        }
+        &__h5{
+            margin-top: 15px;
+        }
+    }
+}
+
 @media screen and (max-width:660px) {
     .header {
         flex-direction: column;
@@ -121,6 +141,19 @@
     }
 }
 
+@media screen and (max-width:590px){
+    .center{
+        padding-left: calc(50% - 250px);
+        padding-right: calc(50% - 250px);
+    }
+}
+@media screen and (max-width:520px){
+    .center{
+        padding-left: calc(50% - 200px);
+        padding-right: calc(50% - 200px);
+    }
+}
+
 @media screen and (max-width:465px) {
     .header {
         &__sertificate {
@@ -134,6 +167,13 @@
                 font-size: 15px;
             }
         }
+    }
+}
+
+@media screen and (max-width:425px){
+    .center{
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
     }
 }
 
@@ -227,6 +267,12 @@
         &__consult {
             width: 300px;
             margin-top: 15px;
+        }
+    }
+    .footer{
+        &__right,
+        &__rights{
+            text-align: center;
         }
     }
 }
