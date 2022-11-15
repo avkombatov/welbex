@@ -169,4 +169,105 @@ ul li {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
+@media screen and (max-width: 1160px) {
+  .center {
+    padding-left: calc(50% - 500px);
+    padding-right: calc(50% - 500px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 450px);
+    padding-right: calc(50% - 450px);
+  }
+  .header__menu {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .center {
+    padding-left: calc(50% - 375px);
+    padding-right: calc(50% - 375px);
+  }
+  .header__circle-red {
+    left: 350px;
+  }
+  .header__circle-purple {
+    left: 550px;
+  }
+  .header__phone {
+    display: none;
+  }
+  .header__gradient {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center {
+    padding-left: calc(50% - 320px);
+    padding-right: calc(50% - 320px);
+  }
+  .header__social {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+    height: 150px;
+  }
+  .header__circle-red, .header__circle-purple {
+    display: none;
+  }
+  .header__menu {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .header__sertificate {
+    display: none;
+  }
+  .header__menu {
+    width: 350px;
+  }
+  .header__menu-li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .center {
+    padding-left: calc(50% - 160px);
+    padding-right: calc(50% - 160px);
+  }
+  .header__menu {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .center {
+    padding-left: calc(50% - 150px);
+    padding-right: calc(50% - 160px);
+  }
+  .header__logo-descr {
+    margin-top: 5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
