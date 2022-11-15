@@ -1,0 +1,139 @@
+.header {
+    background: #1E1E1E;
+    padding-top: 62px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__circle-purple {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        top: -2px;
+        left: 870px;
+        position: absolute;
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        ;
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(5px);
+        backdrop-filter: blur(2px);
+    }
+
+    &__gradient {
+        background: #833AB4;
+        opacity: 0.5;
+        filter: blur(196px);
+        position: absolute;
+        width: 259px;
+        height: 259px;
+        left: 602px;
+        top: -154px;
+    }
+
+    &__circle-red {
+        width: 83px;
+        height: 83px;
+        border-radius: 50px;
+        position: absolute;
+        left: 563px;
+        top: 85px;
+
+        background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%)
+            /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+        ;
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(2px);
+    }
+
+    &__logo {
+        &-top {
+            display: flex;
+        }
+
+        &-img-svg {
+            width: 35px;
+            height: 24px;
+        }
+
+        &-name-svg {
+            width: 96px;
+            height: 14px;
+
+        }
+
+        &-name-a {
+            padding-top: 6px;
+            padding-left: 6px;
+        }
+
+        &-descr {
+            width: 165px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            color: #E4E5EA;
+            margin-top: 10px;
+        }
+    }
+
+    &__menu {
+        width: 500px;
+        z-index: 1;
+
+        &-ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-li {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #E4E5EA;
+        }
+
+        &-li:hover {
+            color: #FE6368;
+            transition: 0.3s;
+        }
+    }
+
+
+
+    &__telegram {
+        width: 17px;
+        height: 14px;
+        cursor: pointer;
+    }
+
+    &__viber {
+        width: 16px;
+        height: 15px;
+        cursor: pointer;
+    }
+
+    &__whatsapp {
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    &__phone {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: right;
+        color: #E4E5EA;
+    }
+
+    &__social {
+        width: 85px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+}
